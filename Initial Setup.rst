@@ -25,6 +25,8 @@ If you are an existing Onboard user you can head over to the accounts page and g
 
 If you would like to get access to Onboard and start prototyping against an example building please `request access here <https://www.onboarddata.io/contact-us>`_.
 
+If you're participating in the NYSERDA hackathon `link <link>`_, please <click here> to get set up with API access for the competition.
+
 You can test if your API key is working with the following code:
 
    >>> from onboard.client import OnboardClient
