@@ -40,7 +40,7 @@ For example, we can retrieve the last week of temperature data from all Zone Tem
 
 .. image:: plot.png
 
-For installation instructions, and to get set up with API access, refer to `Initial Setup <https://onboard-data-python-client-api.readthedocs.io/en/latest/Initial%20Setup.html/>`_.
+For installation instructions, and to get set up with API access, refer to `Initial Setup <https://onboard-data-python-client-api.readthedocs.io/en/latest/Initial%20Setup.html>`_.
 
 .. note::
 
