@@ -38,6 +38,13 @@ Accessing point types is very similar, and can be accessed through client.get_al
 
    >>> # Get all point types from the Data Model
    >>> point_type = pd.DataFrame(client.get_all_point_types())
+   >>> point_type[['id', 'tag_name', 'tags']]
+         id                                  tag_name                                            tags
+   0    124                 Occupied Heating Setpoint             [air, sp, temp, zone, heating, occ]
+   1    118                Outside Air Carbon Dioxide                     [air, co2, sensor, outside]
+   2    130           Return Air Temperature Setpoint                         [air, sp, temp, return]
+   3     84  Dual-Temp Coil Discharge Air Temperature  [air, discharge, dualTemp, sensor, temp, coil]
+   ...
 
 point_type now contains a dataframe listing all the tags associated with each point type.
 
@@ -53,3 +60,29 @@ We can extract the metadata associated with each tag in our data model like so:
    ...
 
 This returns a dataframe containing definitions for all tags in our data model, with attribution where applicable.
+
+Unit types
+----------
+
+   >>> # Get all unit types from the Data Model
+   >>> unit_types = pd.DataFrame(client.get_all_units())
+   >>> unit_types[['id', 'name_long', 'qudt']]
+      id             name_long                                  qudt
+   0  55                 Litre          http://qudt.org/vocab/unit/L
+   1  68             US Gallon     http://qudt.org/vocab/unit/GAL_US
+   2  75                   Bar        http://qudt.org/vocab/unit/BAR
+   3  76                 Watts          http://qudt.org/vocab/unit/W
+   ...
+
+Measurement types
+-----------------
+
+   >>> # Get all measurement types from the Data Model
+   >>> measurement_types = pd.DataFrame(client.get_all_measurements())
+   >>> measurement_types[['id', 'name', 'qudt_type']]
+       id               name                                          qudt_type
+   0   20     Reactive Power   http://qudt.org/vocab/quantitykind/ReactivePower
+   1   27              Floor   http://qudt.org/vocab/quantitykind/Dimensionless
+   2   33       Power Factor   http://qudt.org/vocab/quantitykind/Dimensionless
+   3   31             Torque  http://qudt.org/vocab/quantitykind/Dimensionle...
+   ...

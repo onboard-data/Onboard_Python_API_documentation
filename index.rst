@@ -20,7 +20,7 @@ For example, we can retrieve the last week of temperature data from all Zone Tem
 .. code-block:: python
 
     import pandas as pd
-    import onboard.client
+    from onboard.client import OnboardClient
     from datetime import datetime, timezone, timedelta
     from onboard.client.models import PointSelector, TimeseriesQuery, PointData
     from typing import List
