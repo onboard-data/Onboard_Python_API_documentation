@@ -12,7 +12,7 @@ Using the API, we can retrieve the data from all the buildings that belong to ou
     0   66       6   T`Challa House  ...          81            NaN
     1  427       6  Office Building  ...        4219       NaN  NaN
     2  428       6       Laboratory  ...        2206       NaN  NaN
-    3  429       6      Residential  ...        4394       NaN  NaN
+    3  429       6         Hogwarts  ...        4394       NaN  NaN
 
 The first column of this dataframe ('id') contains the building identifier number.
 
