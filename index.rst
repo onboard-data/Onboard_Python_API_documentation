@@ -21,9 +21,11 @@ For example, we can retrieve the last week of temperature data from all Zone Tem
 
     import pandas as pd
     from onboard.client import OnboardClient
-    from datetime import datetime, timezone, timedelta
+    from onboard.client.dataframes import points_df_from_streaming_timeseries
     from onboard.client.models import PointSelector, TimeseriesQuery, PointData
+    from datetime import datetime, timezone, timedelta
     from typing import List
+    import pytz
     client = OnboardClient(api_key='your-api-key-here')
 
     query = PointSelector()
@@ -37,6 +39,19 @@ For example, we can retrieve the last week of temperature data from all Zone Tem
 
     timeseries_query = TimeseriesQuery(point_ids = selection['points'], start = start, end = end)
     sensor_data = points_df_from_streaming_timeseries(client.stream_point_timeseries(timeseries_query))
+
+and to plot:
+
+.. code-block:: python
+
+    # set the timestamp as the index and forward fill the data for plotting
+    sensor_data_clean = sensor_data.set_index('timestamp').astype(float).ffill()
+    # Edit the indexes just for visualization purposes
+    indexes = [i.split('T')[0] for i in list(sensor_data_clean.index)]
+    sensor_data_clean.index = indexes
+    fig = sensor_data_clean.plot(figsize=(15,8), fontsize = 12)
+    fig.set_ylabel('Farenheit',fontdict={'fontsize':15})
+    fig.set_xlabel('time stamp',fontdict={'fontsize':15})
 
 .. image:: plot.png
 
