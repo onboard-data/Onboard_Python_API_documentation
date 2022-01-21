@@ -62,7 +62,7 @@ For installation instructions, and to get set up with API access, refer to `Init
 
 .. note::
 
-   While we are committed to backwards-compatibility, this project is under active development. If you discover a feature that would be helpful, or any unexpected behavior, please contact us at xxx@onboarddata.io
+   While we are committed to backwards-compatibility, this project is under active development. If you discover a feature that would be helpful, or any unexpected behavior, please contact us at support@onboarddata.io.
 
 Contents
 --------

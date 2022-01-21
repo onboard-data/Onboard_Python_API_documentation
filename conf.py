@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Onboard Python API documentation'
-copyright = '2022, Ted Alexander'
+copyright = '2022, Onboard Data Inc.'
 author = 'Ted Alexander'
 
 # The full version, including alpha/beta/rc tags
