@@ -7,9 +7,9 @@ Accessed with :code:`pd.json_normalize(client.get_equipment_types())`
 
 **id**: unique integer associated with the given type/tag
 
-**tag_name**: short name generally used in scripts
+**tag_name**: short name. This is what we use in our ontology. Use this version of the tag name in scripts, and when referencing our ontology.
 
-**name_long**: longer, human-readable name (e.g. tag "cogen" => "Cogeneration Plant")
+**name_long**: longer, human-readable name (e.g. tag "cogen" => "Cogeneration Plant"). Used for display purposes.
 
 **name_abbr**: common abbreviated form (e.g. "FCU", "CHWS")
 
