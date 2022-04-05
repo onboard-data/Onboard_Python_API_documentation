@@ -19,7 +19,7 @@ Accessed with :code:`pd.json_normalize(client.get_equipment_types())`
 
 **sub_types**: embedded JSON of possible forms of the equipment super-type (e.g. 'fan' has the sub types 'exhaustFan', 'reliefFan', 'returnFan', etc.)
 
-**tags**: Haystack tags associated with equipment super-type.
+**tags**: Haystack tags associated with equipment super-type
 
 Sub-equipment types
 -------------------
@@ -29,9 +29,9 @@ Accessed for given equipment (e.g. 'fan') with :code:`sub_type = pd.DataFrame(eq
 
 **equipment_type_id**: id of the associated equipment tag in client.get_equipment_types()
 
-**tag_name**: short name generally used in scripts
+**tag_name**: this is the sub equip type tag associated with a class
 
-**name_long**: longer, human-readable name
+**name_long**: longer, human-readable name. This is the class name you will find in the ontology.
 
 **name_abbr**: common abbreviated form
 
