@@ -41,7 +41,7 @@ Accessed with :code:`client.get_all_point_types()`
 
 **id**: unique integer associated with the given type/tag
 
-**tag_name**: short name generally used in scripts
+**tag_name**: human-readable name. This is the class name you will find in the ontology.
 
 **display_name**:
 
