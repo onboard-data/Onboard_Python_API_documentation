@@ -3,7 +3,7 @@ Column Definitions
 
 Equipment types
 ---------------
-Accessed with pd.json_normalize(client.get_equipment_types())
+Accessed with :code:`pd.json_normalize(client.get_equipment_types())`
 
 **id**: unique integer associated with the given type/tag
 
@@ -25,7 +25,7 @@ Accessed with pd.json_normalize(client.get_equipment_types())
 
 Sub-equipment types
 -------------------
-Accessed for given equipment (e.g. 'fan') with: sub_type = pd.DataFrame(equip_type[equip_type.tag_name == 'fan']['sub_types'].item())
+Accessed for given equipment (e.g. 'fan') with :code:`sub_type = pd.DataFrame(equip_type[equip_type.tag_name == 'fan']['sub_types'].item())`
 
 **id**: unique integer associated with the given type/tag
 
@@ -39,7 +39,7 @@ Accessed for given equipment (e.g. 'fan') with: sub_type = pd.DataFrame(equip_ty
 
 Point types
 -----------
-Accessed with client.get_all_point_types()
+Accessed with :code:`client.get_all_point_types()`
 
 **id**: unique integer associated with the given type/tag
 
@@ -49,7 +49,7 @@ Accessed with client.get_all_point_types()
 
 **active**: ???
 
-**measurement_id**: id of the associated measurement type in client.get_all_measurements()
+**measurement_id**: id of the associated measurement type in :code:`client.get_all_measurements()`
 
 **tag_set_ids**: ???
 
@@ -59,7 +59,7 @@ Accessed with client.get_all_point_types()
 
 Unit types
 ----------
-Accessed with pd.DataFrame(client.get_all_units())
+Accessed with :code:`pd.DataFrame(client.get_all_units())`
 
 **id**: unique integer associated with the given type/tag
 
@@ -79,7 +79,7 @@ Accessed with pd.DataFrame(client.get_all_units())
 
 Measurement types
 -----------------
-Accessed with pd.DataFrame(client.get_all_measurements())
+Accessed with :code:`pd.DataFrame(client.get_all_measurements())`
 
 **id**: unique integer associated with the given measurement types
 
@@ -95,7 +95,7 @@ Accessed with pd.DataFrame(client.get_all_measurements())
 
 Tag metadata
 ------------
-Accessed with pd.DataFrame(client.get_tags())
+Accessed with :code:`pd.DataFrame(client.get_tags())`
 
 **id**: unique integer associated with the given tag metadata
 
