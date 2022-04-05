@@ -108,17 +108,17 @@ Accessed with :code:`pd.DataFrame(client.get_tags())`
 Equipment IDS
 -------------
 
-['id**
+**id**: int
 
 **building_id**
 
-**equip_id**
+**equip_id**: Name to identify individual equipment instances. Constructed as equipment name + identifying suffix
 
-**suffix**
+**suffix**: Just the identifying suffix part of the equip_id
 
-**equip_type_name**
+**equip_type_name**: Relevant name in the ontology
 
-**equip_type_id**
+**equip_type_id**: Relevant integer id of equipment
 
 **equip_type_abbr**
 
@@ -130,20 +130,18 @@ Equipment IDS
 
 **equip_subtype_tag**
 
-**flow_order**
+**floor_num_physical**: code for floor where equipment is located. Can be integer or NaN if not available
 
-**floor_num_physical**
+**floor_num_served**: code for floor that equipment serves. Can be integer or NaN if not available
 
-**floor_num_served**
+**area_served_desc**: Description of area that equipment serves
 
-**area_served_desc**
+**equip_dis**: plain-text description of equipment
 
-**equip_dis**
+**parent_equip**: integer id that links to parent equipment row(s)
 
-**parent_equip**
+**child_equip**: integer id that links to child equipment row(s)
 
-**child_equip**
+**points**: embedded JSON response containing associated points
 
-**points**
-
-**tags**
+**tags**: Haystack tags associated with equipment
