@@ -17,7 +17,7 @@ Accessed with :code:`pd.json_normalize(client.get_equipment_types())`
 
 **critical_point_types**: id numbers of commonly(?) associated point types (look up in client.get_all_point_types())
 
-**sub_types**: embedded JSON of possible forms of the generic equipment type (e.g. 'fan' has the sub types 'exhaustFan', 'reliefFan', 'returnFan', etc.)
+**sub_types**: embedded JSON of possible forms of the equipment super-type (e.g. 'fan' has the sub types 'exhaustFan', 'reliefFan', 'returnFan', etc.)
 
 **tags**: ???
 
