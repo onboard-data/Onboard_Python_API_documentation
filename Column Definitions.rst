@@ -102,3 +102,48 @@ Accessed with :code:`pd.DataFrame(client.get_tags())`
 **def_url**: url for source of definition (brick and haystack only)
 
 **category**: can be 'Medium', 'Medium Property', None, 'Point Class', 'Quantity Modifier' ???
+
+
+
+Equipment IDS
+-------------
+
+['id**
+
+**building_id**
+
+**equip_id**
+
+**suffix**
+
+**equip_type_name**
+
+**equip_type_id**
+
+**equip_type_abbr**
+
+**equip_type_tag**
+
+**equip_subtype_name**
+
+**equip_subtype_id**
+
+**equip_subtype_tag**
+
+**flow_order**
+
+**floor_num_physical**
+
+**floor_num_served**
+
+**area_served_desc**
+
+**equip_dis**
+
+**parent_equip**
+
+**child_equip**
+
+**points**
+
+**tags**
