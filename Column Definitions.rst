@@ -13,7 +13,7 @@ Accessed with :code:`pd.json_normalize(client.get_equipment_types())`
 
 **name_abbr**: common abbreviated form (e.g. "FCU", "CHWS")
 
-**active**: True, is this class in the latest version of the ontology
+**active**: True if this class in the latest version of the ontology
 
 **critical_point_types**: id numbers of the associated point types that are expected to be observed (look up in client.get_all_point_types())
 
@@ -43,9 +43,7 @@ Accessed with :code:`client.get_all_point_types()`
 
 **tag_name**: human-readable name. This is the class name you will find in the ontology.
 
-**display_name**:
-
-**active**: ???
+**active**: True if this class in the latest version of the ontology
 
 **measurement_id**: id of the associated measurement type in :code:`client.get_all_measurements()`
 
