@@ -77,7 +77,7 @@ Accessed with :code:`pd.DataFrame(client.get_all_measurements())`
 
 **name**: name of measurement type
 
-**default_unit_id**: id of associated unit types in client.get_all_units(). Note, pandas will cast this column as a float, but it can still be used to look up ids. (??? But why does Temperature, which contains all the temp units, just point to F? and why a float?)
+**default_unit_id**: id of default associated unit type in client.get_all_units(). Note, pandas will cast this column as a float, but it can still be used to look up id
 
 **units_convertible**: True if units of this measurement type can be interchangeably converted (generally True for continuous measurement types)
 
