@@ -132,6 +132,18 @@ Building-Specific Equipment
 
 **floor_num_physical**: code for floor where equipment is located. Can be integer or NaN if not available
 
+  basement = 1000
+
+  rooftop = 1001
+
+  outside = 1002
+
+  whole_buildings = 1003
+
+  ground_floor = 1004
+
+  penthouse = 1005
+
 **floor_num_served**: code for floor that equipment serves. Can be integer or NaN if not available
 
 **area_served_desc**: Description of area that equipment serves
@@ -154,11 +166,10 @@ class FloorEncodings:
     ground_floor = 1004
     penthouse = 1005
 
-
 Building-Specific Points
 ------------------------
 
-'id**:  unique integer associated with the given point in this building. Will be unique across all points in platform.
+**id**:  unique integer associated with the given point in this building. Will be unique across all points in platform.
 
 **building_id**:  unique integer associated with the building. Will be unique across all buildings in platform.
 
