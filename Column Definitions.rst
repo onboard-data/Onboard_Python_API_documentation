@@ -105,8 +105,8 @@ Accessed with :code:`pd.DataFrame(client.get_tags())`
 
 
 
-Equipment IDS
--------------
+Building-Specific Equipment
+---------------------------
 
 **id**: int
 
@@ -145,3 +145,41 @@ Equipment IDS
 **points**: embedded JSON response containing associated points
 
 **tags**: Haystack tags associated with equipment
+
+
+Building-Specific Points
+------------------------
+
+'id**:  unique integer associated with the given point in this building. Will be unique across all points in platform.
+
+**building_id**:  unique integer associated with the building. Will be unique across all buildings in platform.
+
+**last_updated**: Unix-formatted timestamp of most recent value reported from point
+
+**first_updated**:nix-formatted timestamp of earliest value reported from point
+
+**name**: raw sensor metadata
+
+**description**: raw sensor metadata (alternate location)
+
+**units**: Matches to unit abbreviation in units table
+
+**tagged_units**:
+
+**raw_unit_id**: unit id as it appears in :code:`client.get_all_units()`
+
+**value**: Most recent reported value for point
+
+**type**: name of point type in the ontology
+
+**point_type_id**: point type name as it appears in :code:`client.get_all_point_types()`
+
+**measurement_id**:
+
+**datasource_hash**:
+
+**topic**:
+
+**state_text**:
+
+**equip_id'
