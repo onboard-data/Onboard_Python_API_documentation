@@ -13,9 +13,7 @@ Accessed with :code:`pd.json_normalize(client.get_equipment_types())`
 
 **name_abbr**: common abbreviated form (e.g. "FCU", "CHWS")
 
-**active**: ???
-
-**flow_order**: ???
+**active**: True, is this class in the latest version of the ontology
 
 **critical_point_types**: id numbers of commonly(?) associated point types (look up in client.get_all_point_types())
 
