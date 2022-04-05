@@ -47,9 +47,7 @@ Accessed with :code:`client.get_all_point_types()`
 
 **measurement_id**: id of the associated measurement type in :code:`client.get_all_measurements()`
 
-**tag_set_ids**: ???
-
-**tags**: ???
+**tags**:  Haystack tags associated with point type
 
 **default_unit_id**: ??? (always None)
 
