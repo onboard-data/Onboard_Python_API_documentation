@@ -17,7 +17,7 @@ Accessed with :code:`pd.json_normalize(client.get_equipment_types())`
 
 **critical_point_types**: id numbers of the associated point types that are expected to be observed (look up in client.get_all_point_types())
 
-**sub_types**: embedded JSON of possible forms of the equipment super-type (e.g. 'fan' has the sub types 'exhaustFan', 'reliefFan', 'returnFan', etc.)
+**sub_types**: embedded JSON of possible forms of the equipment super-type (e.g. 'fan' has the sub-types 'exhaustFan', 'reliefFan', 'returnFan', etc.)
 
 **tags**: Haystack tags associated with equipment super-type
 
@@ -49,8 +49,6 @@ Accessed with :code:`client.get_all_point_types()`
 
 **tags**:  Haystack tags associated with point type
 
-**default_unit_id**: ??? (always None)
-
 Unit types
 ----------
 Accessed with :code:`pd.DataFrame(client.get_all_units())`
@@ -61,11 +59,11 @@ Accessed with :code:`pd.DataFrame(client.get_all_units())`
 
 **name_abbr**: abbreviated form (e.g. 'm3/h')
 
-**data_type**: form of associated data. Can be 'Binary', 'Continuous', 'Enum', 'None', 'Ordinal'. ???
+**data_type**: form of associated data. Can be 'Binary', 'Continuous', 'Enum', 'None', or 'Ordinal'
 
-**raw_encoding**: for Binary and Enum data types, contains dictionary matching number to interpretation. ???
+**raw_encoding**: for Binary and Enum data types, contains dictionary matching number to interpretation.
 
-**display_encoding**: for Binary and Enum data types, contains dictionary showing how each reported number will be displayed. E.g., a 0 from an Occupancy sensor will be reported as ''Unoccupied'.
+**display_encoding**: for Binary and Enum data types, contains dictionary showing how each reported number will be displayed. E.g., a 0 from an Occupancy sensor will be reported as 'Unoccupied'.
 
 **qudt**:  url for additional information about unit (e.g. 'Degrees Celsius') on qudt.org
 
@@ -101,16 +99,15 @@ Accessed with :code:`pd.DataFrame(client.get_tags())`
 
 **def_url**: url for source of definition (brick and haystack only)
 
-**category**: can be 'Medium', 'Medium Property', None, 'Point Class', 'Quantity Modifier' ???
-
+**category**: can be 'Medium', 'Medium Property', None, 'Point Class', 'Quantity Modifier'
 
 
 Building-Specific Equipment
 ---------------------------
 
-**id**: int
+**id**: unique integer associated with the given equipment in this building. Will be unique across all equipment in platform.
 
-**building_id**
+**building_id**: unique integer associated with the building. Will be unique across all buildings in platform.
 
 **equip_id**: Name to identify individual equipment instances. Constructed as equipment name + identifying suffix
 
@@ -118,17 +115,17 @@ Building-Specific Equipment
 
 **equip_type_name**: Relevant name in the ontology
 
-**equip_type_id**: Relevant integer id of equipment
+**equip_type_id**: integer id of relevant equipment type
 
-**equip_type_abbr**
+**equip_type_abbr**: abbreviation of relevant equipment type
 
-**equip_type_tag**
+**equip_type_tag**: tag name of relevant equipment type
 
-**equip_subtype_name**
+**equip_subtype_name**: name of relevant equipment sub-type
 
-**equip_subtype_id**
+**equip_subtype_id**: integer id of relevant equipment sub-type
 
-**equip_subtype_tag**
+**equip_subtype_tag**:  tag name of relevant equipment sub-type
 
 **floor_num_physical**: code for floor where equipment is located. Can be integer or NaN if not available
 
@@ -154,28 +151,21 @@ Building-Specific Equipment
 
 **child_equip**: integer id that links to child equipment row(s)
 
-**points**: embedded JSON response containing associated points
+**points**: embedded JSON containing associated points
 
 **tags**: Haystack tags associated with equipment
 
-class FloorEncodings:
-    basement = 1000
-    rooftop = 1001
-    outside = 1002
-    whole_buildings = 1003
-    ground_floor = 1004
-    penthouse = 1005
 
 Building-Specific Points
 ------------------------
 
-**id**:  unique integer associated with the given point in this building. Will be unique across all points in platform.
+**id**: unique integer associated with the given point in this building. Will be unique across all points in platform.
 
-**building_id**:  unique integer associated with the building. Will be unique across all buildings in platform.
+**building_id**: unique integer associated with the building. Will be unique across all buildings in platform.
 
 **last_updated**: Unix-formatted timestamp of most recent value reported from point
 
-**first_updated**:nix-formatted timestamp of earliest value reported from point
+**first_updated**: Unix-formatted timestamp of earliest value reported from point
 
 **name**: raw sensor metadata
 
