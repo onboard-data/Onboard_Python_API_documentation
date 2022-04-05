@@ -19,7 +19,7 @@ Accessed with :code:`pd.json_normalize(client.get_equipment_types())`
 
 **sub_types**: embedded JSON of possible forms of the equipment super-type (e.g. 'fan' has the sub types 'exhaustFan', 'reliefFan', 'returnFan', etc.)
 
-**tags**: ???
+**tags**: Haystack tags associated with equipment super-type.
 
 Sub-equipment types
 -------------------
