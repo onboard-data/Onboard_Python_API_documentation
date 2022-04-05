@@ -146,6 +146,14 @@ Building-Specific Equipment
 
 **tags**: Haystack tags associated with equipment
 
+class FloorEncodings:
+    basement = 1000
+    rooftop = 1001
+    outside = 1002
+    whole_buildings = 1003
+    ground_floor = 1004
+    penthouse = 1005
+
 
 Building-Specific Points
 ------------------------
@@ -164,8 +172,6 @@ Building-Specific Points
 
 **units**: Matches to unit abbreviation in units table
 
-**tagged_units**:
-
 **raw_unit_id**: unit id as it appears in :code:`client.get_all_units()`
 
 **value**: Most recent reported value for point
@@ -174,12 +180,8 @@ Building-Specific Points
 
 **point_type_id**: point type name as it appears in :code:`client.get_all_point_types()`
 
-**measurement_id**:
+**measurement_id**: measurement type id as it appears in :code:`client.get_all_measurements())`
 
-**datasource_hash**:
+**state_text**: mapping between each state and text description of state
 
-**topic**:
-
-**state_text**:
-
-**equip_id'
+**equip_id**: unique integer associated with the associated equipment
