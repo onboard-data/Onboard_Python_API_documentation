@@ -30,8 +30,11 @@ Point types
 Accessed with client.get_all_point_types()
 
 **id**: unique integer associated with the given type/tag
+
 **tag_name**: short name generally used in scripts
+
 **display_name**:
+
 **active**: ???
 **measurement_id**: id of the associated measurement type in client.get_all_measurements()
 **tag_set_ids**: ???
