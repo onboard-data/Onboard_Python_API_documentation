@@ -104,7 +104,7 @@ Accessed with :code:`pd.DataFrame(client.get_tags())`
 
 **def_url**: url for source of definition (brick and haystack only)
 
-**category**: can be 'Medium', 'Medium Property', None, 'Point Class', 'Quantity Modifier'
+**category**: category used to help sort point types in the ontology (see data model page). Can be 'Medium', 'Medium Property', 'Point Class', 'Quantity Modifier', or  None
 
 
 Columns for Data Extracted from Buildings
