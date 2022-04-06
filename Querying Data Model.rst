@@ -3,7 +3,7 @@ Querying Data Model
 
 Onboard's data model contains both equipment types (e.g. fans, air handling units) and point types (e.g. zone temperature). We can query the full data model within our API.
 
-Data model column definitions for each of the below tables can be found in :ref:`dm-reference-label`.
+Data model column definitions for each of the below tables can be found in :ref:`data model columns page<dm-reference-label>`.
 
 Equipment types
 ---------------
