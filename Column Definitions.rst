@@ -209,7 +209,7 @@ Note: many fields will be blank for NYSERDA hackathon users.
 
 **id**: Unique ID generated for a new site (primary key for the Site Table)
 
-**name**: Site name. Will be a number for NYSERDA hackathon users
+**name**: Site name (will be a number for NYSERDA hackathon users)
 
 **sq_ft**: Total square-footage of the site address
 
