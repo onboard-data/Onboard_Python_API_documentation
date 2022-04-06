@@ -72,6 +72,7 @@ Contents
    Initial Setup
    Querying Data Model
    Querying Building-Specific Data
+   Column Definitions
 
 License
 -------
