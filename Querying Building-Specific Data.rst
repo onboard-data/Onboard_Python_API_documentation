@@ -1,7 +1,7 @@
 Querying Building-Specific Data
 ===============================
 
-For column definitions, see :ref:`my-reference-label`.
+For column definitions, see :ref:`bsp-reference-label`.
 
 Querying Equipment
 ------------------

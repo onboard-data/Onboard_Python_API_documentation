@@ -1,5 +1,5 @@
-Data Model Columns
-==================
+Columns for Data Model
+======================
 
 Equipment types
 ---------------
@@ -107,6 +107,8 @@ Accessed with :code:`pd.DataFrame(client.get_tags())`
 **category**: category used to help sort point types in the ontology (see data model page). Can be 'Medium', 'Medium Property', 'Point Class', 'Quantity Modifier', or  None
 
 
+.. _bsp-reference-label:
+
 Columns for Data Extracted from Buildings
 =========================================
 
@@ -163,7 +165,6 @@ Building-Specific Equipment
 
 **tags**: Haystack tags associated with equipment
 
-.. _my-reference-label:
 
 Building-Specific Points
 ------------------------
