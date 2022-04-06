@@ -31,7 +31,7 @@ The sub-equipment types are nested as dataframes within each row, and can be lis
    3  15                 26        supplyFan         Supply Fan       SFN
    ...
 
-Note that not all equipment types have associated sub types.
+Note that not all equipment types have associated sub-types.
 
 Point types
 -----------
