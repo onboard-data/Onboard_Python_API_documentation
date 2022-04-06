@@ -21,6 +21,7 @@ Accessed with :code:`pd.json_normalize(client.get_equipment_types())`
 
 **tags**: Haystack tags associated with equipment super-type
 
+
 Sub-equipment types
 -------------------
 Accessed for given equipment (e.g. 'fan') with :code:`sub_type = pd.DataFrame(equip_type[equip_type.tag_name == 'fan']['sub_types'].item())`
@@ -35,6 +36,7 @@ Accessed for given equipment (e.g. 'fan') with :code:`sub_type = pd.DataFrame(eq
 
 **name_abbr**: common abbreviated form
 
+
 Point types
 -----------
 Accessed with :code:`client.get_all_point_types()`
@@ -48,6 +50,7 @@ Accessed with :code:`client.get_all_point_types()`
 **measurement_id**: id of the associated measurement type in :code:`client.get_all_measurements()`
 
 **tags**:  Haystack tags associated with point type
+
 
 Unit types
 ----------
@@ -69,6 +72,7 @@ Accessed with :code:`pd.DataFrame(client.get_all_units())`
 
 **unit_type**: url for additional information about measurement type (e.g. 'Temperature') on qudt.org
 
+
 Measurement types
 -----------------
 Accessed with :code:`pd.DataFrame(client.get_all_measurements())`
@@ -84,6 +88,7 @@ Accessed with :code:`pd.DataFrame(client.get_all_measurements())`
 **units**: embedded JSON of possible units for given measurement type
 
 **qudt_type**: url for additional information about measurement type (e.g. 'Temperature') on qudt.org
+
 
 Tag metadata
 ------------
@@ -101,6 +106,9 @@ Accessed with :code:`pd.DataFrame(client.get_tags())`
 
 **category**: can be 'Medium', 'Medium Property', None, 'Point Class', 'Quantity Modifier'
 
+
+Columns for Data Extracted from Buildings
+=========================================
 
 Building-Specific Equipment
 ---------------------------
@@ -127,21 +135,21 @@ Building-Specific Equipment
 
 **equip_subtype_tag**:  tag name of relevant equipment sub-type
 
-**floor_num_physical**: code for floor where equipment is located. Can be integer or NaN if not available
+**floor_num_physical**: 4-digit code (see below) for floor where equipment is located. Can be integer or NaN if not available
 
-  basement = 1000
+  1000: basement
 
-  rooftop = 1001
+  1001: rooftop
 
-  outside = 1002
+  1002: outside
 
-  whole_buildings = 1003
+  1003: whole_buildings
 
-  ground_floor = 1004
+  1004: ground_floor
 
-  penthouse = 1005
+  1005: penthouse
 
-**floor_num_served**: code for floor that equipment serves. Can be integer or NaN if not available
+**floor_num_served**: 4-digit code for floor that equipment serves. Can be integer or NaN if not available
 
 **area_served_desc**: Description of area that equipment serves
 
