@@ -1,4 +1,4 @@
-Column Definitions
+Data Model Columns
 ==================
 
 Equipment types
