@@ -1,7 +1,7 @@
-.. _dm-reference-label:
-
 Columns for Data Model
 ======================
+
+.. _dm-reference-label:
 
 Equipment types
 ---------------
