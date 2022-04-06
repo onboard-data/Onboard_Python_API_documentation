@@ -11,7 +11,7 @@ Accessed with :code:`pd.json_normalize(client.get_equipment_types())`
 
 **tag_name**: this is the equip type tag associated with a class
 
-**name_long**: longer, human-readable name (e.g. tag "cogen" => "Cogeneration Plant"). This is the class name you will find in the ontology.
+**name_long**: longer, human-readable name (e.g. tag "cogen" => "Cogeneration Plant"). This is the class name you will find in the ontology
 
 **name_abbr**: common abbreviated form (e.g. "FCU", "CHWS")
 
