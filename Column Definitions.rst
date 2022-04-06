@@ -200,8 +200,10 @@ Building-Specific Points
 **equip_id**: unique integer associated with the associated equipment
 
 
-Columns from client.get_all_buildings()
----------------------------------------
+Site-Level Data
+---------------
+
+Accessed with :code:`client.get_all_buildings()`
 
 Note: many fields will be blank for NYSERDA hackathon users.
 
