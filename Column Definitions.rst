@@ -32,7 +32,7 @@ Accessed for given equipment (e.g. 'fan') with :code:`sub_type = pd.DataFrame(eq
 
 **equipment_type_id**: id of the associated equipment tag in client.get_equipment_types()
 
-**tag_name**: this is the sub equip type tag associated with a class
+**tag_name**: this is the sub-equip type tag associated with a class
 
 **name_long**: longer, human-readable name. This is the class name you will find in the ontology.
 
