@@ -198,3 +198,63 @@ Building-Specific Points
 **state_text**: mapping between each state and text description of state
 
 **equip_id**: unique integer associated with the associated equipment
+
+
+Columns from client.get_all_buildings()
+---------------------------------------
+
+Note: many fields will be blank for NYSERDA hackathon users.
+
+**id**: Unique ID generated for a new site (primary key for the Site Table)
+
+**org_id**: Identifier assigned by NYSERDA Salesforce for the site in the RTEM application
+
+**name**: Site name. Will be a number for NYSERDA hackathon users
+
+**sq_ft**: Total square-footage of the site address
+
+**equip_count**: Number of equipment instances associated with the building
+
+**point_count**: Number of points associated with the building
+
+**info.org**: Site's main ownership organization
+
+**info.cidate**: Salesforce date when NYSERDA approved vendor's I&C report for the RTEM system
+
+**info.floors**: Number of floors associated with the site's square footage
+
+**info.m2fend**: Site scheduled weekday closing time
+
+**info.satend**: Site scheduled Saturday closing time
+
+**info.sunend**: Site scheduled Sunday closing time
+
+**info.geoCity**: Name of the city where the site is located
+
+**info.sfappno**: Number assigned by NYSERDA Salesforce for the RTEM application
+
+**info.site_id**: Identifier assigned by NYSERDA Salesforce for the site in the RTEM application
+
+**info.geoCoord**: GPS coordinates for the site
+
+**info.geoState**: Name of the state where the site is located (e.g. New York)
+
+**info.m2fstart**: Site scheduled weekday opening time
+
+**info.satstart**: Site scheduled Saturday opening time
+
+**info.sunstart**: Site scheduled Sunday opening time
+
+**info.sfappdate**: Salesforce date when NYSERDA approved the RTEM application
+
+**info.geoCountry**: Name of the country where the site is located
+
+**info.weatherRef**: The source of weather data used by the RTEM system
+
+**info.customerType**: Site's principle end-use classification from NYSERDA Salesforce RTEM application
+
+**info.systemVendor**: Responsible RTEM system vendor
+
+**info.geoPostalCode**: Zip Code for the site
+
+**info.serviceVendor**: Responsible RTEM service vendor
