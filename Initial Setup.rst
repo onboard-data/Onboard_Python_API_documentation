@@ -37,3 +37,13 @@ You can test if your API key is working with the following code:
    {'result': 'ok', 'apiKeyInHeader': True, ... 'authLevel': 4}
 
 You can also retrieve a list of your currently authorized scopes with :code:`client.whoami()['apiKeyScopes']`.
+
+NYSERDA hackathon participants will use an alternate client, which is identical except for some minor differences in available columns:
+
+   >>> from onboard.client import RtemClient
+   >>> client = RtemClient(api_key='your-api-key-here')
+
+Note about data structure
+-------------------------
+
+By default, calls to the API (such as :code:`client.get_equipment_types()`) return JSON objects. In this documentation, we will be converting these objects to pandas dataframes by wrapping our API calls in pd.DataFrame().
