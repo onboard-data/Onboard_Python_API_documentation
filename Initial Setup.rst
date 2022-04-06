@@ -25,7 +25,7 @@ If you are an existing Onboard user you can head over to the accounts page and g
 
 If you would like to get access to Onboard and start prototyping against an example building please `request access here <https://www.onboarddata.io/contact-us>`_.
 
-If you're participating in the `NYSERDA hackathon <https://www.rtemhackathon.com/>`_, please `click here <https://www.rtemhackathon.com/>`_ to get set up with API access for the competition.
+If you're participating in the `NYSERDA hackathon <https://www.rtemhackathon.com/>`_, please check your confirmation email after signing up for API access instructions.
 
 You can test if your API key is working with the following code:
 
