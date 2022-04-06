@@ -1,6 +1,8 @@
 Querying Building-Specific Data
 ===============================
 
+For column definitions, see :ref:`my-reference-label`.
+
 Querying Equipment
 ------------------
 

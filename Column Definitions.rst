@@ -163,6 +163,7 @@ Building-Specific Equipment
 
 **tags**: Haystack tags associated with equipment
 
+.. _my-reference-label:
 
 Building-Specific Points
 ------------------------
