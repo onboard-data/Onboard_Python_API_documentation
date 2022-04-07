@@ -179,15 +179,15 @@ Building-Specific Points
 
 **first_updated**: Unix-formatted timestamp of earliest value reported from point
 
-**name**: raw sensor metadata
+**name**: raw sensor metadata (from BACnet scan)
 
-**description**: raw sensor metadata (alternate location)
+**description**: alternate location for raw sensor metadata (from BACnet scan)
 
 **units**: Matches to unit abbreviation in units table
 
 **raw_unit_id**: unit id as it appears in :code:`client.get_all_units()`
 
-**value**: Most recent reported value for point
+**value**: Most recent reported value for point (from BACnet scan)
 
 **type**: name of point type in the ontology
 
