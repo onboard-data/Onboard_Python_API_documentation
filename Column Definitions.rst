@@ -157,7 +157,7 @@ Building-Specific Equipment
 
 **area_served_desc**: Description of area that equipment serves
 
-**equip_dis**: plain-text description of equipment
+**equip_dis**: plain-text description of equipment from building documentation
 
 **parent_equip**: integer id that links to parent equipment row(s)
 
