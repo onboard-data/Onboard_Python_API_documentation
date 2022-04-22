@@ -64,7 +64,7 @@ For installation instructions, and to get set up with API access, refer to `Init
 
 .. note::
 
-   While we are committed to backwards-compatibility, this project is under active development. If you discover a feature that would be helpful, or any unexpected behavior, please contact us at support@onboarddata.io.
+   While we are committed to backwards-compatibility, this project is under active development. If you discover a feature that would be helpful, or any unexpected behavior, please contact us at support@onboarddata.io. If you are participating in the NYSERDA RTEM Hackathon and have any questions regarding the use of the API or the competition, please email us at support@rtemhackathon.com.
 
 Contents
 --------
