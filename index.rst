@@ -62,6 +62,8 @@ and to plot:
 
 For installation instructions, and to get set up with API access, refer to `Initial Setup <https://onboard-data-python-client-api.readthedocs.io/en/latest/Initial%20Setup.html>`_.
 
+Important note for RTEM Hackathon entrants: the above sample won't work out of the box, because you need to use the RTEM version of the client (see Initial Setup), and because you have access to different buildings. Please see our `Kaggle series <https://www.kaggle.com/datasets/ponybiam/onboard-api-intro>`_ to get started with the RTEM data!
+
 .. note::
 
    While we are committed to backwards-compatibility, this project is under active development. If you discover a feature that would be helpful, or any unexpected behavior, please contact us at support@onboarddata.io. If you are participating in the NYSERDA RTEM Hackathon and have any questions regarding the use of the API or the competition, please email us at support@rtemhackathon.com.
